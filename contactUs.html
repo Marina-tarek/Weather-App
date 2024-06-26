@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- icon -->
+    <link rel="icon" href="image/logo.png">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="#">
+                <img src="image/logo.png" alt="Weather logo">
+                <div class="main-title">
+                    <h1 class="h6 text-white fw-bold">
+                        Company name
+                    </h1>
+                    <p class="small-title fw-light mb-0">tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto left-list gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contactUs.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container">
+            <div class="convert-bar">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-arrow-right-long mx-1 "></i>
+                <span>Contact</span>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="contact-detalis">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0442246378!2d-118.74139974968325!3d34.02060844419666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1719381687632!5m2!1sen!2seg"
+                                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="contact-info fs-14 fw-light">
+                                <i class="fa-solid fa-location-dot me-1"></i> <span>Company Name INC. 2803 Avenue
+                                    Street, Los Angeles</span>
+                                </br>
+                                <i class="fa-solid fa-phone m-1"></i> <a href="#" class="me-3 text-decoration-none">+1
+                                    800 314 235</a>
+                                <i class="fa-solid fa-envelope m-1"></i> <a href="#"
+                                    class="text-decoration-none">contact@companyname.com</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 left-section">
+                        <h2 class="text-white">Contact us</h2>
+                        <p class="text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore
+                            ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum.
+                            Nisi facilis odit hic, ipsum sed!</p>
+                        <form action="" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 px-1">
+                                    <input type="text" placeholder="Your name...">
+                                </div>
+                                <div class="col-md-6 px-1">
+                                    <input type="text" placeholder="Email Addresss...">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 px-1">
+                                    <input type="text" placeholder="Company name...">
+                                </div>
+                                <div class="col-md-6 px-1">
+                                    <input type="text" placeholder="Website...">
+                                </div>
+                            </div>
+
+                            <textarea name="" placeholder="Message..." rows="6"></textarea>
+                            <div class="submit-input fs-14 fw-light">
+                               <input type="submit" class="mb-0">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="div col-md-8">
+              <form action="" class="position-relative Subscribe-section">
+                <input type="text" placeholder="Enter your email to subscribe..." class="subInput rounded-5 border-0 ">
+                <input type="submit" value="Subscribe"
+                  class="position-absolute subBtn rounded-5 bg-primary text-white border-0">
+              </form>
+            </div>
+            <div class="col-md-3">
+              <div class="social-media ">
+                <ul class="list-unstyled d-flex gap-2 justify-content-end mb-0">
+                  <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="https://x.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" target="_blank"><i
+                        class="fa-brands fa-google-plus-g"></i></a></li>
+                  <li><a href="https://www.pinterest.com/login/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                  </li>
+                </ul>
+              </div>
+    
+            </div>
+          </div>
+          <p class="copyRight fw-light fs-14">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
