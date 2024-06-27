@@ -64,12 +64,14 @@
       <div class="container">
         <div class="w-100">
           <form action="" class="search-form position-relative w-100">
-            <input id="searchLocation" type="text" class="search-form-btn form-control rounded-5 main-bg" placeholder="Find your location...">
+            <input id="searchLocation" type="text" class="search-form-btn form-control rounded-5 main-bg"
+              placeholder="Find your location...">
             <input id="searchButton" type="button" value="Find"
-              class="position-absolute search-button rounded-5 bg-primary text-white border-0" >
+              class="position-absolute search-button rounded-5 bg-primary text-white border-0">
+              
           </form>
-        
-         
+          <p id="msg" class="text-danger fw-bold text-center"></p>
+
           <!-- <button class="btn btn-primary text-capitalize seach-btn rounded-5" type="button"
             id="button-addon2">find</button> -->
         </div>
@@ -84,20 +86,21 @@
         <div class="row inner">
           <div class="col-md-4 today p-0">
             <div class="card-header font-color d-flex justify-content-between " id="today">
-              <div id="day">Wednesday</div>
-              <div id="datas"> 26 June</div>
+              <div id="day"></div>
+              <div id="date"> 26 June</div>
             </div>
             <div class="card-body second-pd">
-              <div  class="font-color d-flex">
+              <div class="font-color d-flex">
                 <div id="cities"></div>/ <div id="country"></div>
               </div>
-              <div class="degree text-white">
-                <div id="temp" class="numberOfDegree me-4 fw-bolder"> <sup>o</sup>c</div>
-                <div>
-                  <img  id="forecastIcon">
-                </div>
+              <div class="degree text-white d-flex">
+                <div id="temp" class="numberOfDegree me-4 fw-bolder"></div>
               </div>
-              <div id="weatherDesc" class="text-primary my-3">clear</div>
+              <div>
+                <img id="forecastIcon">
+              </div>
+
+              <div id="weatherDesc" class="text-primary my-3 fs-14 fw-light">clear</div>
               <img src="https://routeweather.netlify.app/images/icon-umberella.png" alt="rain" class="me-1">
               <span class="me-3 font-color" id="humidity">
               </span>
@@ -115,15 +118,14 @@
               <div id="day">Thursday</div>
             </div>
             <div class="card-body first-pd">
-              <div>
+              <div class="degres">
                 <img id="forecastIcon2">
               </div>
-              <div id="temp1" class= "text-white">
+              <div id="temp1" class="text-white h4 fw-bolder">
               </div>
-              <small id="small-degree font-color">
-                25.1<sup>o</sup>
+              <small id="smallDegree1" class="font-color">
               </small>
-              <div id="desc" class="text-primary">sunny</div>
+              <div id="weatherDesc1" class="text-primary my-3 fs-14 fw-light">sunny</div>
             </div>
           </div>
           <div class="col-md-4 text-center p-0">
@@ -134,12 +136,11 @@
               <div>
                 <img id="forecastIcon3">
               </div>
-              <div id="temp2" class= "text-white">
+              <div id="temp2" class="text-white h4 fw-bolder">
               </div>
-              <small id="small-degree font-color">
-                25.1 <sup>o</sup>
+              <small id="smallDegree2" class="font-color">
               </small>
-              <div id="desc" class="text-primary">sunny</div>
+              <div id="weatherDesc2" class="text-primary my-3 fs-14 fw-light">sunny</div>
             </div>
           </div>
 
@@ -153,7 +154,8 @@
       <div class="row">
         <div class="div col-md-8">
           <form action="" class="position-relative Subscribe-section">
-            <input type="text" placeholder="Enter your email to subscribe..." class="subInput main-bg rounded-5 border-0 ">
+            <input type="text" placeholder="Enter your email to subscribe..."
+              class="subInput main-bg rounded-5 border-0 ">
             <input type="submit" value="submit"
               class="position-absolute subBtn rounded-5 bg-primary text-white border-0">
           </form>
@@ -161,18 +163,22 @@
         <div class="col-md-3">
           <div class="social-media ">
             <ul class="list-unstyled d-flex gap-2 justify-content-end mb-0">
-              <li class="main-bg"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li class="main-bg"><a href="https://x.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-              <li class="main-bg"><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" target="_blank"><i
-                    class="fa-brands fa-google-plus-g"></i></a></li>
-              <li class="main-bg"><a href="https://www.pinterest.com/login/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+              <li class="main-bg"><a href="https://www.facebook.com/" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="main-bg"><a href="https://x.com/i/flow/login" target="_blank"><i
+                    class="fa-brands fa-twitter"></i></a></li>
+              <li class="main-bg"><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"
+                  target="_blank"><i class="fa-brands fa-google-plus-g"></i></a></li>
+              <li class="main-bg"><a href="https://www.pinterest.com/login/" target="_blank"><i
+                    class="fa-brands fa-pinterest"></i></a>
               </li>
             </ul>
           </div>
 
         </div>
       </div>
-      <p class="copyRight fw-light fs-14 font-color">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      <p class="copyRight fw-light fs-14 font-color">Copyright 2014 Company name. Designed by Themezy. All rights
+        reserved</p>
     </div>
   </footer>
 

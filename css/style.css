@@ -7,6 +7,7 @@
 .fs-14{
     font-size: 14px;
 }
+
 .main-bg{
     background-color: var(--main-color);
 }
@@ -90,9 +91,7 @@ text-align: center;
     color: var(--fourth-color);
 }
 /* weather part */
-/* .today{
-    background-color: var(--third-color);
-} */
+
 .inner{
     margin: -70px 0 50px;
     background-color: #323544;
@@ -102,7 +101,9 @@ text-align: center;
     padding: 10px;
     font-weight: 400;
 }
-
+.forecastIcon{
+    width: 90px;
+}
 .numberOfDegree{
     font-size: 60px;
 }
