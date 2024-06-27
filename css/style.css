@@ -6,11 +6,21 @@
 }
 .fs-14{
     font-size: 14px;
-
+}
+.main-bg{
+    background-color: var(--main-color);
+}
+.font-color{
+    color: var(--fourth-color);
+}
+.first-pd{
+    padding:50px 20px 10px;;
+}
+.second-pd{
+    padding: 30px 20px;
 }
 body{
 font-family: "Roboto", "Open Sans", sans-serif;
-background-color: var(--main-color);
 }
 /* nav bar */
 .navbar{
@@ -57,7 +67,7 @@ background-color: var(--main-color);
 .search-form{
     margin-bottom: 70px;
 }
-.search-btn{
+.search-button{
     padding: 0 40px;
     right: 5px;
     top: 5px;
@@ -65,7 +75,6 @@ background-color: var(--main-color);
 text-align: center;
 }
 .search-form .search-form-btn{
-    background-color: var(--main-color);
     color: var(--second-color);
     padding: 20px 50px 20px 20px;
 }
@@ -78,17 +87,27 @@ text-align: center;
     border: 0;
 }
 .form-control::placeholder{
-    color: gray;
+    color: var(--fourth-color);
 }
+/* weather part */
+/* .today{
+    background-color: var(--third-color);
+} */
 .inner{
     margin: -70px 0 50px;
     background-color: #323544;
 }
-.card-body{
-    padding: 50px 20px 10px;
+.card-header{
+    background-color:rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-weight: 400;
 }
+
 .numberOfDegree{
-    font-size: 90px;
+    font-size: 60px;
+}
+#desc{
+    margin: 20px 0;
 }
 /* footer */
 footer{
@@ -99,7 +118,6 @@ footer{
     margin-bottom: 30px;
 }
 .subInput{
-    background-color: var(--main-color);
 color: var(--second-color);
 width: 100%;
 padding: 20px 100px 20px 20px;
@@ -112,19 +130,14 @@ padding: 20px 100px 20px 20px;
     right: 5px;
     top: 5px;
     bottom: 5px;
-    /* transform: translateX(-10%); */
 }
 .social-media ul li{
-    background-color: var(--main-color);
     width: 40px;
     height: 40px;
     border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-}
-.copyRight{
-    color: var(--fourth-color);
 }
 
 /* contact us page */
@@ -139,7 +152,6 @@ align-items: center;
 }
 .convert-bar a{
     text-decoration: none;
-    color:var(--fourth-color) ;
 }
 .convert-bar a:hover{
     text-decoration: underline;
@@ -154,14 +166,11 @@ align-items: center;
 }
 .contact-info{
     padding: 20px;
-    color: var(--fourth-color);
 }
 .contact-info i{
     color: #009ad8;
 }
-.contact-info a{
-    color: var(--fourth-color);
-}
+
 .left-section{
     margin-left: 80px;
 }
@@ -185,5 +194,4 @@ h2{
     background-color: #009ad8;
     border: 0;
     width: 25%;
-  
 }
