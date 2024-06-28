@@ -34,10 +34,10 @@
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="bar"><i class="fa-solid fa-bars"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto left-list gap-4">
+        <ul class="navbar-nav ms-auto left-list gap-4 mt-sm-4 mt-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -67,31 +67,30 @@
             <input id="searchLocation" type="text" class="search-form-btn form-control rounded-5 main-bg"
               placeholder="Find your location...">
             <input id="searchButton" type="button" value="Find"
-              class="position-absolute search-button rounded-5 bg-primary text-white border-0">
-              
+              class="position-absolute search-button rounded-5 btn btn-primary text-white border-0">
+
           </form>
           <p id="msg" class="text-danger fw-bold text-center"></p>
 
-          <!-- <button class="btn btn-primary text-capitalize seach-btn rounded-5" type="button"
-            id="button-addon2">find</button> -->
+
         </div>
       </div>
 
-      <!-- <input type="text" class="search-input ">
-<button class="btn btn-primary text-capitalize seach-btn">find</button> -->
+
     </section>
     <!-- weather describtion -->
     <section class="weather-table">
       <div class="container">
-        <div class="row inner">
-          <div class="col-md-4 today p-0">
+        <div class="row weather-row ">
+          <div class="col-md-4 today p-0 inner">
             <div class="card-header font-color d-flex justify-content-between " id="today">
               <div id="day"></div>
               <div id="date"></div>
             </div>
             <div class="card-body second-pd">
               <div class="font-color d-flex">
-                <div id="cities"></div>/ <div id="country"></div>
+                <div id="demo"></div>
+                <div id="Location"></div>/ <div id="country"></div>
               </div>
               <div class="degree text-white d-flex">
                 <div id="temp" class="numberOfDegree me-4 fw-bolder"></div>
@@ -128,7 +127,7 @@
               <div id="weatherDesc1" class="text-primary my-3 fs-14 fw-light"></div>
             </div>
           </div>
-          <div class="col-md-4 text-center p-0">
+          <div class="col-md-4 text-center p-0 inner">
             <div class="card-header font-color ">
               <div id="day3"></div>
             </div>
@@ -151,18 +150,18 @@
   </main>
   <footer>
     <div class="container">
-      <div class="row">
+      <div class="row ">
         <div class="div col-md-8">
           <form action="" class="position-relative Subscribe-section">
             <input type="text" placeholder="Enter your email to subscribe..."
               class="subInput main-bg rounded-5 border-0 ">
             <input type="submit" value="submit"
-              class="position-absolute subBtn rounded-5 bg-primary text-white border-0">
+              class="position-absolute subBtn rounded-5 btn btn-primary text-white border-0">
           </form>
         </div>
         <div class="col-md-3">
           <div class="social-media ">
-            <ul class="list-unstyled d-flex gap-2 justify-content-end mb-0">
+            <ul class="list-unstyled d-flex gap-2 mb-0">
               <li class="main-bg"><a href="https://www.facebook.com/" target="_blank"><i
                     class="fa-brands fa-facebook-f"></i></a></li>
               <li class="main-bg"><a href="https://x.com/i/flow/login" target="_blank"><i
