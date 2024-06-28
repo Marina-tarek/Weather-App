@@ -8,7 +8,7 @@ if (navigator.geolocation) {
         let lat = position.coords.latitude
         let lon = position.coords.longitude
         let appApiKey = `f8ad15983f193fc0757393639ddc7517`
-        let liveLocation = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${appApiKey}`)
+        let liveLocation = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${appApiKey}`)
         main = await liveLocation.json();
         cityNameDefult = { ...main }[0].name
         //   console.log(cityNameDefult)
