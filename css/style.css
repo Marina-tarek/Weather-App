@@ -3,6 +3,8 @@
     --second-color: white;
     --third-color: #262936;
     --fourth-color: rgb(191, 193, 200);
+    --light-blue-color: #009ad8;
+    --transition: all 0.3s ease;
 }
 
 .fs-14 {
@@ -29,6 +31,7 @@
 body {
     font-family: "Roboto", "Open Sans", sans-serif;
 }
+
 /* =====>  FIRST PAGE */
 /* nav bar */
 .navbar {
@@ -46,12 +49,12 @@ body {
     border-radius: 50%;
     border: 2px solid transparent;
     color: var(--second-color);
-    transition: all 0.3s ease;
+    transition: var(--transition);
 }
 
 .bar:hover {
-    border-color: #009ad8;
-    color: #009ad8;
+    border-color: var(--light-blue-color);
+    color: var(--light-blue-color);
 }
 
 .navbar-toggler {
@@ -70,9 +73,11 @@ body {
 .left-list a {
     color: var(--second-color);
 }
-.navbar-nav{
+
+.navbar-nav {
     border-radius: 10px;
 }
+
 .navbar-nav .nav-link {
     padding: 5px 25px;
     border-radius: 30px;
@@ -80,15 +85,14 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #009ad8;
-    border: 2px solid #009ad8;
-    transition: all 0.3s ease;
+    color: var(--light-blue-color);
+    border: 2px solid var(--light-blue-color);
+    transition: var(--transition);
 }
 
 .navbar-nav .nav-link.active {
-    color: #009ad8;
-    border: 2px solid #009ad8;
-
+    color: var(--light-blue-color);
+    border: 2px solid var(--light-blue-color);
     padding: 5px 25px;
 
 }
@@ -134,11 +138,12 @@ body {
 }
 
 /*  weather part  */
-.weather-row{
+.weather-row {
     margin: -70px 0 70px;
 }
+
 .inner {
-   
+
     background-color: #323544;
 }
 
@@ -186,9 +191,11 @@ footer {
     top: 5px;
     bottom: 5px;
 }
-.social-media ul{
+
+.social-media ul {
     justify-content: end;
 }
+
 .social-media ul li {
     width: 40px;
     height: 40px;
@@ -196,13 +203,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
+    transition: var(--transition);
 }
-.social-media ul li:hover{
-    background-color: #009ad8;
-   cursor: pointer;
+
+.social-media ul li:hover {
+    background-color: var(--light-blue-color);
+    cursor: pointer;
 }
-.social-media ul li:hover a{
+
+.social-media ul li:hover a {
     color: var(--second-color);
 }
 
@@ -230,15 +239,18 @@ footer {
 .content {
     padding: 70px 0;
 }
+
 .contact-detalis {
     border-radius: 10px;
     background-color: var(--third-color);
 }
+
 .contact-info {
     padding: 20px;
 }
+
 .contact-info i {
-    color: #009ad8;
+    color: var(--light-blue-color);
 }
 
 .left-section {
@@ -272,38 +284,83 @@ h2 {
 }
 
 /*    Response     */
+@media (max-width: 1200px) {
+    iframe {
+        aspect-ratio: 1/1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 @media (max-width: 992px) {
+    iframe {
+        aspect-ratio: 2/1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contact-title {
+        text-align: center;
+    }
+
     .navbar-collapse .navbar-nav {
         background-color: rgb(38, 41, 54);
         text-align: center;
     }
-}
-@media (max-width: 768px) {
-    .search-form{
-        margin-bottom: 50px;
+
+    .navbar-nav .nav-link.active {
+        border: 0;
     }
-    .second-pd{
-        padding: 40px 30px 50px;
+
+    .navbar-nav .nav-link.active:hover {
+        border: 2px solid var(--light-blue-color);
+        transition: color 0.3s ease;
     }
-    .first-pd{
-        padding: 50px 20px;
+
+    .left-section {
+
+        margin: 40px 0 0 0;
     }
-    footer .container{
-        gap: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 20px;
+
+    .social-media ul {
+        justify-content: center;
+
     }
-    footer .row{
+
+    footer .row {
         gap: 20px;
     }
-    .social-media ul{
+
+    footer .container {
+        gap: 35px;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        margin-bottom: 50px;
+    }
+
+    .second-pd {
+        padding: 40px 30px 50px;
+    }
+
+    .first-pd {
+        padding: 50px 20px;
     }
 
 }
+
 @media (max-width: 576px) {
-    .navbar-collapse .navbar-nav{
+    .navbar-collapse .navbar-nav {
         margin-top: 20px;
     }
 }
