@@ -70,7 +70,9 @@ body {
 .left-list a {
     color: var(--second-color);
 }
-
+.navbar-nav{
+    border-radius: 10px;
+}
 .navbar-nav .nav-link {
     padding: 5px 25px;
     border-radius: 30px;
