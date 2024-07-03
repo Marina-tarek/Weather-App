@@ -241,6 +241,7 @@ footer {
 }
 
 .contact-detalis {
+    overflow: hidden;
     border-radius: 10px;
     background-color: var(--third-color);
 }
