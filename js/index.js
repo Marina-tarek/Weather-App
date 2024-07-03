@@ -4,19 +4,26 @@ const searchButton = document.getElementById("searchButton");
 
 // =====>to do deafult location
 if (navigator.geolocation) {
+    let appApiKey = `f8ad15983f193fc0757393639ddc7517`
     navigator.geolocation.getCurrentPosition(async function (position) {
         let lat = position.coords.latitude
         let lon = position.coords.longitude
-        let appApiKey = `f8ad15983f193fc0757393639ddc7517`
+
         let liveLocation = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${appApiKey}`)
         main = await liveLocation.json();
-        cityNameDefult = { ...main }[0].name
+
+        cityName = { ...main }[0].name
         //   console.log(cityNameDefult)
+        checkWeather(cityName)
+        anotherDays(cityName);
+    }, async function () {
+        // =======جديد
+        let liveLocationDefult = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=31.205753&lon=29.924526&limit=1&appid=${appApiKey}`)
+        main = await liveLocationDefult.json();
+        cityNameDefult = { ...main }[0].name
         checkWeather(cityNameDefult)
         anotherDays(cityNameDefult);
-    }, function (error) {
-        window.alert("must allow location access")
-        console.log(error)
+    
     })
 }
 
