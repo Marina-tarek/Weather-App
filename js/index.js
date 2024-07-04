@@ -18,12 +18,13 @@ if (navigator.geolocation) {
         anotherDays(cityName);
     }, async function () {
         // =======جديد
-        let liveLocationDefult = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=31.205753&lon=29.924526&limit=1&appid=${appApiKey}`)
-        main = await liveLocationDefult.json();
-        cityNameDefult = { ...main }[0].name
-        checkWeather(cityNameDefult)
-        anotherDays(cityNameDefult);
-    
+        // let liveLocationDefult = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=31.205753&lon=29.924526&limit=1&appid=${appApiKey}`)
+        // main = await liveLocationDefult.json();
+        // cityNameDefult = { ...main }[0].name
+        // checkWeather(cityNameDefult)
+        // anotherDays(cityNameDefult);
+        checkWeather("alexandria")
+        anotherDays("alexandria");
     })
 }
 
